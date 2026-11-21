@@ -5,6 +5,9 @@ A support assistant for a (fictional) property-management app, built as a
 questions: it **changes things**, such as assigning tasks, closing tasks and sending emails.
 So the interesting part is the safety around those actions.
 
+**Status:** proof of concept. The tests use an offline scripted planner. The Claude planner
+is implemented, but this repo doesn't include an evaluation of its tool choices yet.
+
 ```
 START → agent ──(tool calls?)──→ tools ──→ agent → … → END
               └──(plain answer)──→ END
