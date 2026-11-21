@@ -1,0 +1,18 @@
+[project]
+name = "langgraph-support-agent"
+version = "0.1.0"
+description = "A support agent built with LangGraph: read and write tools, human approval for risky actions, undo, and hand-off to a person."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["langgraph>=1.0", "anthropic>=0.40"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["support_agent*"]
